@@ -31,6 +31,7 @@
   
   img {
     display: block;
+    max-width:  100%;height: auto;
   }
    .container {
      width: 1200px ;
@@ -147,7 +148,6 @@ color: #FFFFFF;}
   }
   .buttonly {
     min-width: 200px;
-    height: 50px;
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
@@ -165,15 +165,8 @@ color: #FFFFFF;}
   .buttonly:focus {
     background-color: var(--backlight-color);
   }
-  .buttonly{
-    width: 136px;
-height: 30px;font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 30px;color: #FFFFFF;background: #2196F3;
-width: 200px;
-height: 50px}
+ 
+
 
   .logo-link {
     font-family: var(--logo-font);
@@ -318,7 +311,9 @@ height: 50px}
   /*===team studio===*/
 
   .team-section {
-    background-color: var(--accent-background-color);
+    background-color: var(--accent-background-color)
+    ;padding: 94px 0;
+    background: #F5F4FA;
   }
   
   .team-list {
@@ -339,7 +334,8 @@ height: 50px}
   .team-member {
     flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 30px;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);border-radius: 0px 0px 4px 4px;
+
   }
   
   .activity-title,
@@ -422,10 +418,10 @@ height: 50px}
       border-right: 1px solid var(--accent-background-color);
     }
     
-    .example-card {
+    .example-card { flex-basis: calc(100%/  3 - 30px);
       margin-top: 30px;
-      margin-left: 30px;
-    }
+      margin-left: 30px;border: 1px solid #EEEEEE;
+    display: block;}
     
   /*===portfolio filters end===*/
   
@@ -455,7 +451,7 @@ height: 50px}
 .abbr {
   text-transform: uppercase;
 }
-
+.section{padding: 94px 0;}
 /*===portfolio examples end===*/
   
   /*===footer===*/
