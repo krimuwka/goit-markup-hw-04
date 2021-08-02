@@ -214,8 +214,25 @@ color: #FFFFFF;}
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+
   }
+  .mail-icon {
+  fill: var(--main-text-color);
+  margin-right: 10px;
   
+}
+
+.tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts-link:hover .mail-icon,
+.contacts-link:focus .mail-icon,
+.contacts-link:hover .tel-icon,
+.contacts-link:focus .tel-icon {
+  fill: currentColor;
+}
   /*===header end===*/
   /*===hero studio===*/
   
