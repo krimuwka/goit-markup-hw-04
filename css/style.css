@@ -591,6 +591,7 @@ address {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--dark-background-text-color);
+  ;
 }
 
 .social-icon {
