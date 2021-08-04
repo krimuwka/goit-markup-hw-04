@@ -129,18 +129,18 @@ color: #FFFFFF;}
   
     
   .slide-container {background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../images/backg.jpg');
-    background-color: var(--section-background-color);
+    
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--background-hero-color);
+    
     text-align: center;
     background-color: var(--section-background-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .hero-description{
@@ -391,6 +391,7 @@ color: #FFFFFF;}
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 16px;
   }
   
   /*===team studio end===*/
@@ -417,7 +418,8 @@ color: #FFFFFF;}
   background-color: var(--accent-background-color);
   cursor: pointer;
 }
-
+.current-btn{color: var(--dark-background-text-color);
+  background-color: var(--accent-color);}
 .filter-buttons:hover,
 .filter-buttons:focus {
   color: var(--dark-background-text-color);
@@ -426,14 +428,7 @@ color: #FFFFFF;}
 /*===portfolio filters end===*/
 
   
-  .filter-buttons {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    color: var(--heading-color);
-    background-color: var(--portfolio-buttons-backgrount-color);
-    cursor: pointer;
-  }
+
   .buttony{width: 29px;
     height: 26px;font-family: Roboto;
     font-style: normal;
@@ -448,18 +443,25 @@ color: #FFFFFF;}
       border-left: 1px solid var(--accent-background-color);
       border-right: 1px solid var(--accent-background-color);
     }
-    
+    .a {display: block;
+    cursor: pointer;border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
     .example-card { flex-basis: calc(100%/  3 - 30px);
       margin-top: 30px;
-      margin-left: 30px;border: 1px solid #EEEEEE;
-    display: block;}
+      margin-left: 30px;
+    }
     
   /*===portfolio filters end===*/
   .clients-list {
     display: flex;
     justify-content: space-between;
   }
-  
+  .clients-title{ margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--heading-color);
+  }
   .client-link {
     display: flex;
     justify-content: center;
@@ -531,7 +533,7 @@ color: #FFFFFF;}
     font-size: 14px;
     line-height: 1.71;
   }
-  
+  .footer-container{display: flex;align-items: center;}
   .address-link {
     color: var(--dark-background-text-color);
   }
@@ -613,19 +615,18 @@ address {
   height: 20px;
   fill: var(--dark-background-text-color);
 }
-
+.footer-wrapper{margin-right: 70px;}
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-title {
-  font-size: 14px;
+.footer-title {font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-background-text-color);
-  margin-bottom: 20px;
-  margin-left: 70px;
-}
+  margin-bottom: 20px;}
+  
+
 /* .footer .logo-link {
   margin-bottom: 20px;
 }
